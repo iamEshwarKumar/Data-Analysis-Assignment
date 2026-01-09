@@ -1,7 +1,3 @@
-/* ===============================
-   COMMON UTILITIES
-================================ */
-
 /* This function is used to load the data */
 async function loadJSON(view) {
   const res = await fetch(`data/${view}_Raw.json`);
@@ -211,5 +207,6 @@ document.getElementById("granularity").addEventListener("change", e => {
 
 
 updateDashboard();
+
 
 
