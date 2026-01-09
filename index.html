@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task 2 – Dynamic Visualization</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+    canvas {
+      max-width: 1000px;
+      max-height: 450px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Task 2 – Dynamic Visualization</h2>
+
+  <div id="controls">
+    <label>Data View:</label>
+    <select id="view">
+      <option value="Orders">Orders</option>
+      <option value="Sessions">Sessions</option>
+      <option value="Calls">Calls</option>
+    </select>
+
+    <label style="margin-left:20px;">Time Granularity:</label>
+    <select id="granularity">
+      <option value="Daily">Daily</option>
+      <option value="Weekly">Weekly</option>
+      <option value="Monthly">Monthly</option>
+    </select>
+  </div>
+
+  <canvas id="chart"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
